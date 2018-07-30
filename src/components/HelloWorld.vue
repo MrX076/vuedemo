@@ -80,17 +80,26 @@
         </a>
       </li>
     </ul>
+  <!-- 实例化组件 -->
+     <v-props></v-props>
   </div>
+  
 </template>
 
 <script>
+//导入组件
+import Props from "./props.vue"
 export default {
   name: 'HelloWorld',
   data () {
     return {
       msg: 'Welcome to Your Vue.js App'
     }
-  }
+  },
+  components:{
+    //注册组件
+        'v-props':Props,
+    }
 }
 </script>
 
